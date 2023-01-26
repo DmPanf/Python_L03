@@ -1,6 +1,4 @@
-Num = int(input('\nВведите количество элементов будущего списка: '))
-List = []
-print('Вводите любые цифры по одной.')
-for i in range(Num):
-    List.append(int(input(f'Введите {i + 1} элемент: ')))
-print(sorted(List))
+num_str = input('\nВведите любые цифры через запятую: ')
+my_list = num_str.split(',')
+new_list = list(set(my_list))
+print('\nНовый список уникальных элементов:\n', new_list)
